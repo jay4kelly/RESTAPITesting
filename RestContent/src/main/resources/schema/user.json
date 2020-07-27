@@ -1,0 +1,92 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "first_name": {
+      "type": "string"
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "gender": {
+      "type": "string"
+    },
+    "dob": {
+      "type": "null"
+    },
+    "email": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "null"
+    },
+    "website": {
+      "type": "null"
+    },
+    "address": {
+      "type": "null"
+    },
+    "status": {
+      "type": "string"
+    },
+    "_links": {
+      "type": "object",
+      "properties": {
+        "self": {
+          "type": "object",
+          "properties": {
+            "href": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "href"
+          ]
+        },
+        "edit": {
+          "type": "object",
+          "properties": {
+            "href": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "href"
+          ]
+        },
+        "avatar": {
+          "type": "object",
+          "properties": {
+            "href": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "href"
+          ]
+        }
+      },
+      "required": [
+        "self",
+        "edit",
+        "avatar"
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "first_name",
+    "last_name",
+    "gender",
+    "dob",
+    "email",
+    "phone",
+    "website",
+    "address",
+    "status",
+    "_links"
+  ]
+}
