@@ -45,7 +45,6 @@ Demonstrate use of the following testing technologies and procedures as part of 
     
 ##TODOs
 
-- Externalize Bearer token in app.properties using CI system   
     
     
     
