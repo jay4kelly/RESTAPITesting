@@ -3,7 +3,7 @@ Feature: Validating User Apis
 
 @AddUser
   Scenario: Verify if a new user can be created
-    Given Add new User Payload with "John" "Lennon" "male" "john.lennon@TheBeatles.com"
+    Given Add new User Payload with "John" "Lennon" "male" "john.lennon1@TheBeatles.com"
     When User calls "UsersResource" with "POST" http request
     Then the api call returns with a status code 201
     And User calls "UsersResource" with "GET" http request for added user

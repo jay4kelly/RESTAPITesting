@@ -24,9 +24,9 @@ public class TestMain {
     public static AppProperties properties = null;
     private static RequestSpecification req;
 
-    private static final Map<String, String> HEADERS = new HashMap<String, String>();
+    private static final Map<String, String> HEADERS = new HashMap<>();
 
-    {
+    static {
         if (properties == null){
             properties = new AppProperties();
             RestAssured.baseURI = properties.getBaseURL();
@@ -34,7 +34,7 @@ public class TestMain {
         }
         if (restLog == null){
             try {
-                restLog = new PrintStream(new FileOutputStream("logging.txt"));
+                restLog = new PrintStream(new FileOutputStream("target/logging.txt"));
             } catch (FileNotFoundException e) {
                 log.fatal("unable to create PrintStream rest_log",e);
             }

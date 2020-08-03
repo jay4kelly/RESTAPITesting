@@ -13,7 +13,8 @@ Demonstrate use of the following testing technologies and procedures as part of 
 - Log4J2 (logging)
 
 ## gorest.co.in site tested
-    [gorest web site] (https://gorest.co.in) is a "Online REST API for Testing and Prototyping". An account and a token must be generated to use this site but it is free to use.
+    
+    [gorest web site](https://gorest.co.in) is a "Online REST API for Testing and Prototyping". An account and a token must be generated to use this site but it is free to use.
 
 
 ## Module Definitions
@@ -26,24 +27,24 @@ Demonstrate use of the following testing technologies and procedures as part of 
     Ideally a json schema could be define to fully cover all POJO needs.
     Another option that would be more complete but require more work, would be to generaete the POJO using [jsonschema2pojo generator] (http://www.jsonschema2pojo.org/).
     
-###RestTests Module
+### RestTests Module
 
     Contains all of the REST API tests utlizing RestAssured, TestNG and Cucumber.
     
-    **APIs tested**
+    APIs tested
     - Get User
     - Delete User
     - Create User
     - Get User List
     
-    **APIs tests planned**
+    APIs tests planned
     - Create Comment
     - Delete Comment
     - Get Comment List
     
     Note: This is just a subset of all the gorest apis, for example, posts and albumns are not included.
     
-##TODOs
+## TODOs
 
     
     

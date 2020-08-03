@@ -106,6 +106,6 @@ public class StepDefinitions extends TestMain {
     public void resultContainsUsers() {
         JsonPath json = stringToJson(response.asString());
         List<String> list = json.getList("result");
-        Assert.assertEquals(list.isEmpty(),false,"List of users is empty");
+        Assert.assertFalse(list.isEmpty(),"List of users is empty");
     }
 }
